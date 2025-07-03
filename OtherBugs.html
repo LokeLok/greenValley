@@ -10,37 +10,73 @@
 <body>
     <header>
         <nav class="top-bar">
-            <a href="">Hero Challenges</a>
+            <img src="img/misc/logofull.svg">
         </nav>
+
         <nav class="top-bar-sub">
             <a href="DotaPlusChallenges.html" class="in-active">Overview</a>
             <a href="CurrentChallenges.html" class="in-active">Current Challenges</a>
-            <a href="RemoveChallenges.html" class="in-active">Removed Challenges</a>
+            <a href="RemovedChallenges.html" class="in-active">Removed Challenges</a>
             <a href="NewChallenges.html" class="in-active">New Challenges</a>
             <a href="OtherBugs.html" class="active">UI Issues</a>
         </nav>
     </header>
+
     <main>
         <div class="preamble">
             <h1>UI Issues</h1>
             <br>
-            <p>UI issues related to Hero Challenges.</p>
+            <p>The timer text is a copy paste from the old design, not matching the new design. Hero Challenges also have different heights(see videos further down the page) depending on the number of lines in the description. Please take advantage of the available space to fix these issues.</p>
             <br>
-            <p>After the Summer Client Update back in 2023, there still are some issues left. The timer text is a copy paste from the old design, not matching the new design. The three Challenges on the page also don't have different heights, leading
-                to a messy design. The old design had a fix height, which worked very well. There is plenty of space on the page to fix all these issues. See pictures for a possible fix.
-            </p>
-            <br>
-            <h1>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Old &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; New</h1>
+            <div class="headline-tag">
+                <h1>CURRENT</h1>
+                <h1>POSSIBLE FIX</h1>
+            </div>
             <br>
             <img src="img/misc/ProgressPageOldNew.png">
             <br>
+
             <hr class="green">
             <br>
-            <p>There is a couple of issues when cycling thru the Progress Page. Challenges doesn't have a set height, making them jumping(see video) all over the place. When cycling thru Heroes, Dota will crash before finishing one round. This is very annoying 
-                when refreshing all Heroes Challenges at once.
+            <p>When you reach a Hero Level Tier and the last bit of experience comes from Relics, the 'Level Up' pop-up will not appear. Which is unsatisfying and disappointing.</p>
+            <br>
+            <div class="media-content">
+                <img height="500px" src="img/misc/HeroLevelPopUp.png">
+            </div>
+            <br>
+
+            <hr class="green">
+            <br>
+            <p>If you're like me and refreshes every Hero Challenges at once, you will experience Dota crashing while cycling through them. This started happening after 7.36 and I've tested this on two different computers. It worked fine for 6 years 
+                before that.
             </p>
             <br>
-            <video width="920px" src="video/HeroProgress.mp4"></video>
+            <div class="media-content">
+                <video autoplay width="100%" src="video/HeroChallengesCrashVideo.mp4"></video>
+            </div>
+            <br>
+        
+            <hr class="green">
+            <br>
+            <p>Examples of heights different between Challenges. This wasn't the case in the old UI.</p>
+            <br>
+            <div class="media-content">
+                <video autoplay width="100%" src="video/HeroProgress.mp4"></video>
+            </div>
+            <br>
+            <div class="media-content">
+                <video autoplay width="100%" src="video/ChallengesIn-game.mp4"></video>
+            </div>
+            <br>
+
+            <hr class="green">
+            <br>
+            <p>If you swap Hero with a teammate after loading into the game(after picking phase), you will have each other Challenges. I don't know the what the end result for this is after a won game.</p>
+            <br>
+            <div class="media-content">
+                <video autoplay width="100%" src="video/HeroChallengesAfterSwap.mp4"></video>
+            </div>
+
         </div>
 
         <footer>

@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     expandButtons.forEach(button => {
         button.addEventListener('click', function() {
             const panel = this.closest('.expandable-panel');
-            
+
             // If we're collapsing, add a small delay before changing height
             if (panel.classList.contains('expanded')) {
                 // First hide the content to avoid scrollbar flash
@@ -32,29 +32,4 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-function showTime() {
-  var timediv = document.getElementById("myClockDisplay");
-  var datediv = document.getElementById("myDateDisplay");
-  var dt = new Date();
-  var d = dt.getDate();
-  var m = dt.getMonth() + 1; // getMonth() returns the month "index" starting with 0 for Jan
-  var y = dt.getFullYear();
-  var hh = dt.getHours();
-  var mm = dt.getMinutes();
-  var ss = dt.getSeconds();
-  var session = "AM";
-  if (hh == 0) {
-    hh = 12;
-  }
-
-  if (hh > 12) {
-    hh = hh - 12;
-    session = "PM";
-  }
-
-  datediv.textContent = m + "/" + d + "/" + y;
-  setTimeout(showTime, 1000);
-}
-
-showTime();
 
