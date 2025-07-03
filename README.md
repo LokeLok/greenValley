@@ -1,2 +1,2 @@
 # greenValley
-Dota Plus Challenges
+Please fix Hero Challenges
