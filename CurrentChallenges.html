@@ -28,8 +28,6 @@
     </style>
 
     <header>
-        <nav class="top-bar"></nav>
-        
         <nav class="top-bar-sub">
             <a href="DotaPlusChallenges.html" class="in-active">Overview</a>
             <a href="CurrentChallenges.html" class="active">Current Challenges</a>
@@ -43,7 +41,10 @@
         <div class="preamble">
             <h1>Current Challenges</h1>
             <br>
-            <p>Some common isssues with Challenges; not working correctly, inconsistent description, unnecessary words, capital leters, missing periodes, wrong icons. On avg Heroes have ~14 challenges each.</p>
+            <p>Some common isssues with Challenges; not working correctly, inconsistent description, unnecessary words, capital leters, missing periodes, wrong icons.</p>
+            <br>
+            <p>The first column is the current way the challenge is written in Dota. The second column follows the new standard. The third column has more info about the challenge. Green color indicates nothing wrong and orange color indicates 
+                something is wrong. Most of the issues are related to the description of the challenge.</p>
         </div>
 
 
@@ -131,7 +132,7 @@
                         <img src="img/icons_dota_plus_challenges_general/icon_challenges_bashedenemies.png">
                     </div>
                     <div class="challenges-text">
-                        <p><span>Bash</span> enemy Heroes with <span>12</span> / <span>24</span> / <span>36</span> times.</p>
+                        <p><span>Bash</span> enemy Heroes <span>12</span> / <span>24</span> / <span>36</span> times.</p>
                     </div>
                 </div>
             </div>
@@ -193,7 +194,11 @@
                     <p>Works Correctly: <span class="good">Yes</span></p>
                     <p>Icon: <span class="bad">Bad</span></p>
                     <ul>
-                        <li>Doesn't fill the whole frame.</li>
+                        <li>Doesn't fill the whole frame</li>
+                    </ul>
+                    <p>Function: <span class="mid">Changed</span></p>
+                    <ul>
+                        <li>Changed to fit the new description standard</li>
                     </ul>
                     <p>Description: <span class="mid">Changed</span></p>
                     <ul>
@@ -238,7 +243,7 @@
             </div>
             
             <div class="panel expandable-panel">
-                <div class="panel-header">DOTA_ChallengeDesc_Damage_While_Invis_Hero</div>
+                <div class="panel-header">"DOTA_ChallengeDesc_Damage_While_Invis_Hero"</div>
                 <button class="expand-button">More</button>
                 <div class="panel-content">
                     <hr>
@@ -510,7 +515,7 @@
                         <img src="img/icons_dota_plus_challenges_general/icon_challenges_magicdamage.png">    
                     </div>
                     <div class="challenges-text">
-                        <p>Deal <span>8000</span> / <span>14000</span> / <span>20000</span> damage to enemy Heroes with <span>magical</span> damamge.</p>
+                        <p>Deal <span>8000</span> / <span>14000</span> / <span>20000</span> damage to enemy Heroes with <span>magical</span> damage.</p>
                     </div>
                 </div>
             </div>
@@ -601,18 +606,18 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="panel">
                 <div class="panel-content">
                     <div class ="challenges-icon">
-                        <img src="img/icons_dota_plus_challenges_general/icon_challenges_minionmagicdmg.png">   
+                        <img src="img/icons_dota_plus_challenges_general/icon_challenges_minionkills.png">
                     </div>
                     <div class="challenges-text">
-                        <p>Deal <span>1500</span> / <span>3000</span> / <span>4500</span> magical damage to enemy Heroes with <span>controlled units</span>.</p>
+                        <p>Deal <span>x</span> / <span>x</span> / <span>x</span> damage to enemy Heroes with <span>controlled units</span>.</p>
                     </div>
                 </div>
             </div>
-            
+
             <div class="panel expandable-panel">
                 <div class="panel-header">"DOTA_ChallengeDesc_MagicDamageByControlledUnits"</div>
                 <button class="expand-button">More</button>
@@ -621,11 +626,15 @@
                     <p>Works Correctly: <span class="good">Yes</span></p>
                     <p>Icon: <span class="bad">Bad</span></p>
                     <ul>
-                        <li>Changed to the new Standard</li>
+                        <li>Doesn't fill the whole frame</li>
+                    </ul>
+                    <p>Function: <span class="mid">Changed</span></p>
+                    <ul>
+                        <li>Changed to fit the new description standard</li>
                     </ul>
                     <p>Description: <span class="mid">Changed</span></p>
                     <ul>
-                        <li>It's now universial</li>
+                        <li>Changed to the new Standard</li>
                     </ul>
                     <p>Heroes: Added / Removed</p>
                     <ul>
@@ -683,10 +692,6 @@
                     </ul>
                     <p>Updated List</p>
                     <div class="hero-list">
-                        <button class="js-copy-to-clip" aria-controls="content-to-copy">
-  Click to copy
-</button>
-                        <p id="content-to-copy">"npc_dota_hero_warlock"     "1"</p>
                         <p>"npc_dota_hero_chen"        "1"</p>
                         <p>"npc_dota_hero_techies" 	   "1"</p>
                         <p>"npc_dota_hero_enchantress" "1"</p>
@@ -722,7 +727,10 @@
                 <button class="expand-button">More</button>
                 <div class="panel-content">
                     <hr>
-                    <p>Works Correctly: <span class="good">Yes</span></p>
+                    <p>Works Correctly: <span class="bad">No</span></p>
+                    <ul>
+                        <li>Counts allied wards denied</li>
+                    </ul>
                     <p>Icon: <span class="good">Good</span></p>
                     <p>Description: <span class="mid">Changed</span></p>
                     <ul>
@@ -915,7 +923,7 @@
                         <img src="img/icons_dota_plus_challenges_general/icon_challenges_stunnedherokills.png">
                     </div>
                     <div class="challenges-text">
-                        <p>Get <span>3</span> / <span>5</span> / <span>7</span> kills or assists on enemy Heroes that are affected by stun.</p>
+                        <p>Get <span>3</span> / <span>5</span> / <span>7</span> kills or assists on enemy Heroes that are affected by <span>stun</span>.</p>
                     </div>
                 </div>
             </div>
@@ -927,6 +935,10 @@
                     <hr>
                     <p>Works Correctly: <span class="good">Yes</span></p>
                     <p>Icon: <span class="good">Good</span></p>
+                    <p>Function: <span class="mid">Changed</span></p>
+                    <ul>
+                        <li>Changed to fit the new description standard</li>
+                    </ul>
                     <p>Description: <span class="mid">Changed</span></p>
                     <ul>
                         <li>Changed to the new Standard</li>
@@ -1013,7 +1025,7 @@
                         <img src="img/icons_dota_plus_challenges_general/icon_challenges_killswitharmorreduce.png">
                     </div>
                     <div class="challenges-text">
-                        <p>Get <span>9</span> / <span>12</span> / <span>15</span> kills or assists on enemy Heroes that are affected by <span>armor reducing</span> abilities.</p>
+                        <p>Get <span>9</span> / <span>12</span> / <span>15</span> kills or assists on enemy Heroes that are affected by <span>armor reducing abilities</span>.</p>
                     </div>
                 </div>
             </div>
@@ -1410,7 +1422,7 @@
                         <img src="img/icons_dota_plus_challenges_general/icon_challenges_rootkills.png">
                     </div>
                     <div class="challenges-text">
-                        <p>Get <span>3</span> / <span>5</span> / <span>7</span> kills or assist on enemy Heroes that are affected by <span>root</span>.</p>
+                        <p>Get <span>3</span> / <span>5</span> / <span>7</span> kills or assists on enemy Heroes that are affected by <span>root</span>.</p>
                     </div>
                 </div>
             </div>
@@ -1422,6 +1434,10 @@
                     <hr>
                     <p>Works Correctly: <span class="good">Yes</span></p>
                     <p>Icon: <span class="good">Good</span></p>
+                    <p>Function: <span class="mid">Changed</span></p>
+                    <ul>
+                        <li>Changed to fit the new description standard</li>
+                    </ul>
                     <p>Description: <span class="mid">Changed</span></p>
                     <ul>
                         <li>Changed to the new Standard</li>
@@ -1467,7 +1483,7 @@
                         <img src="img/icons_dota_plus_challenges_general/icon_challenges_silence.png">
                     </div>
                     <div class="challenges-text">
-                        <p>Get </span> <span>3</span> / <span>6</span> / <span>9</span> kills or assist on enemy Heroes that are affected by <span>silence.</p>
+                        <p>Get </span> <span>3</span> / <span>6</span> / <span>9</span> kills or assists on enemy Heroes that are affected by <span>silence</span>.</p>
                     </div>
                 </div>
             </div>
@@ -1479,6 +1495,10 @@
                     <hr>
                     <p>Works Correctly: <span class="good">Yes</span></p>
                     <p>Icon: <span class="good">Good</span></p>
+                    <p>Function: <span class="mid">Changed</span></p>
+                    <ul>
+                        <li>Changed to fit the new description standard</li>
+                    </ul>
                     <p>Description: <span class="mid">Changed</span></p>
                     <ul>
                         <li>Changed to the new Standard</li>
@@ -1636,7 +1656,7 @@
                     <p>Works Correctly: <span class="good">Yes</span></p>
                     <p>Icon: <span class="bad">Bad</span></p>
                     <ul>
-                        <li>Change it to a more universial icon</li>
+                        <li>Make a universial icon for tp</li>
                     </ul>
                     <p>Description: <span class="mid">Changed</span></p>
                     <ul>
@@ -2257,7 +2277,7 @@
             </div>
             
             <div class="panel expandable-panel">
-                <div class="panel-header">"DOTA_ChallengeDesc_AbaddonMistCoilPurge_Sub2"</div>
+                <div class="panel-header">"DOTA_ChallengeDesc_Abaddon_Challenge_With_Apothic_Shield"</div>
                 <button class="expand-button">More</button>
                 <div class="panel-content">
                     <hr>
@@ -2314,7 +2334,7 @@
                         <img src="img/icons_dota_plus_challenges_heroes/abaddon_aphotic_shield.png">
                     </div>
                     <div class="challenges-text">
-                        <p>Purge <span>4</span> / <span>7</span> / <span>10</span> stuns from Friendly Heroes using <span>Aphotic Shield</span>.</p>
+                        <p>Purge <span>4</span> / <span>7</span> / <span>10</span> stuns from friendly Heroes using <span>Aphotic Shield</span>.</p>
                     </div>
                 </div>
             </div>
@@ -2337,6 +2357,10 @@
                     <hr>
                     <p>Works Correctly: <span class="good">Yes</span></p>
                     <p>Icon: <span class="good">Good</span></p>
+                    <p>Function: <span class="mid">Changed</span></p>
+                    <ul>
+                        <li>Changed to fit the new description standard</li>
+                    </ul>
                     <p>Description: <span class="mid">Changed</span></p>
                     <ul>
                         <li>Changed to the new Standard</li>
@@ -2416,6 +2440,10 @@
                     <hr>
                     <p>Works Correctly: <span class="good">Yes</span></p>
                     <p>Icon: <span class="good">Good</span></p>
+                    <p>Function: <span class="mid">Changed</span></p>
+                    <ul>
+                        <li>Changed to fit the new description standard</li>
+                    </ul>
                     <p>Description: <span class="mid">Changed</span></p>
                     <ul>
                         <li>Changed to the new Standard</li>
@@ -2608,6 +2636,10 @@
                     <hr>
                     <p>Works Correctly: <span class="good">Yes</span></p>
                     <p>Icon: <span class="good">Good</span></p>
+                    <p>Function: <span class="mid">Changed</span></p>
+                    <ul>
+                        <li>Changed to fit the new description standard</li>
+                    </ul>
                     <p>Description: <span class="mid">Changed</span></p>
                     <ul>
                         <li>Changed to the new Standard</li>
@@ -2803,6 +2835,10 @@
                     <hr>
                     <p>Works Correctly: <span class="good">Yes</span></p>
                     <p>Icon: <span class="good">Good</span></p>
+                    <p>Function: <span class="mid">Changed</span></p>
+                    <ul>
+                        <li>Changed to fit the new description standard</li>
+                    </ul>
                     <p>Description: <span class="mid">Changed</span></p>
                     <ul>
                         <li>Changed to the new Standard</li>
@@ -3072,6 +3108,10 @@
                     <ul>
                         <li>Changed to fit the new description</li>
                     </ul>
+                    <p>Function: <span class="mid">Changed</span></p>
+                    <ul>
+                        <li>Changed to fit the new description standard</li>
+                    </ul>
                     <p>Description: <span class="mid">Changed</span></p>
                     <ul>
                         <li>Changed to the new Standard</li>
@@ -3193,6 +3233,10 @@
                     <hr>
                     <p>Works Correctly: <span class="good">Yes</span></p>
                     <p>Icon: <span class="good">Good</span></p>
+                    <p>Function: <span class="mid">Changed</span></p>
+                    <ul>
+                        <li>Changed to fit the new description standard</li>
+                    </ul>
                     <p>Description: <span class="mid">Changed</span></p>
                     <ul>
                         <li>Changed to the new Standard</li>
@@ -3304,6 +3348,10 @@
                     <hr>
                     <p>Works Correctly: <span class="good">Yes</span></p>
                     <p>Icon: <span class="good">Good</span></p>
+                    <p>Function: <span class="mid">Changed</span></p>
+                    <ul>
+                        <li>Changed to fit the new description standard</li>
+                    </ul>
                     <p>Description: <span class="mid">Changed</span></p>
                     <ul>
                         <li>Changed to the new Standard</li>
@@ -3435,7 +3483,7 @@
                         <img src="img/icons_dota_plus_challenges_heroes/broodmother_spin_web_png.png">
                     </div>
                     <div class="challenges-text">
-                        <p>Get <span>4</span> / <span>8</span> / <span>12</span> kills on enemy Heroes from inside your <span>Spin Web</span>.</p>
+                        <p>Get <span>4</span> / <span>8</span> / <span>12</span> kills on enemy Heroes from inside your <span>Web</span>.</p>
                     </div>
                 </div>
             </div>
@@ -3458,6 +3506,10 @@
                     <hr>
                     <p>Works Correctly: <span class="good">Yes</span></p>
                     <p>Icon: <span class="good">Good</span></p>
+                    <p>Function: <span class="mid">Changed</span></p>
+                    <ul>
+                        <li>Changed to fit the new description standard</li>
+                    </ul>
                     <p>Description: <span class="mid">Changed</span></p>
                     <ul>
                         <li>Changed to the new Standard</li>
@@ -3532,6 +3584,10 @@
                     <hr>
                     <p>Works Correctly: <span class="good">Yes</span></p>
                     <p>Icon: <span class="good">Good</span></p>
+                    <p>Function: <span class="mid">Changed</span></p>
+                    <ul>
+                        <li>Changed to fit the new description standard</li>
+                    </ul>
                     <p>Description: <span class="mid">Changed</span></p>
                     <ul>
                         <li>Changed to the new Standard</li>
@@ -3616,6 +3672,10 @@
                     <hr>
                     <p>Works Correctly: <span class="good">Yes</span></p>
                     <p>Icon: <span class="good">Good</span></p>
+                    <p>Function: <span class="mid">Changed</span></p>
+                    <ul>
+                        <li>Changed to fit the new description standard</li>
+                    </ul>
                     <p>Description: <span class="mid">Changed</span></p>
                     <ul>
                         <li>Changed to the new Standard</li>
@@ -3636,47 +3696,6 @@
             <h1>Clinkz</h1>
             <h1></h1>
             <h1></h1>
-
-            <!-- Burning Army Damage -->
-            <div class="panel">
-                <div class="panel-content">
-                    <div class ="challenges-icon">
-                        <img src="img/icons_dota_plus_challenges_heroes/clinkz_burning_army_png.png">
-                    </div>
-                    <div class="challenges-text">
-                        <p>Deal <span>6000</span> / <span>12000</span> / <span>18000</span> damage to enemy Heroes with <span>Burning Army</span>.</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="panel">
-                <div class="panel-content">
-                    <div class ="challenges-icon">
-                        <img src="img/icons_dota_plus_challenges_heroes/clinkz_burning_army_png.png">
-                    </div>
-                    <div class="challenges-text">
-                        <p>Deal <span>6000</span> / <span>12000</span> / <span>18000</span> damage to enemy Heroes with <span>skeleton arches</span>.</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="panel expandable-panel">
-                <div class="panel-header">"DOTA_ChallengeDesc_clinkz_hero_damage_with_skeleton_army"</div>
-                <button class="expand-button">More</button>
-                <div class="panel-content">
-                    <hr>
-                    <p>Works Correctly: <span class="good">Yes</span></p>
-                    <p>Icon: <span class="good">Good</span></p>
-                    <p>Icon: <span class="bad">Bad</span></p>
-                    <ul>
-                        <li>Need a new icon for skeleton arches</li>
-                    </ul>
-                    <p>Description: <span class="mid">Changed</span></p>
-                    <ul>
-                        <li>Changed to the new Standard</li>
-                    </ul>
-                </div>
-            </div>
 
             <!-- Death Pact Kills -->
             <div class="panel-main-mid">
@@ -4105,7 +4124,7 @@
                         <img src="img/icons_dota_plus_challenges_heroes/dawnbreaker_fire_wreath_png.png">
                     </div>
                     <div class="challenges-text">
-                        <p>Deal <span>4000</span> / <span>6000</span> / <span>8000</span> Damage to enemy heroes with Starbreaker.</p>
+                        <p>Deal <span>4000</span> / <span>6000</span> / <span>8000</span> Damage to enemy heroes with Starbreaker</p>
                     </div>
                 </div>
             </div>
@@ -4142,7 +4161,7 @@
                         <img src="img/icons_dota_plus_challenges_heroes/dawnbreaker_celestial_hammer_png.png">
                     </div>
                     <div class="challenges-text">
-                        <p>Kill <span>3</span> / <span>5</span> / <span>7</span> enemy heroes that are being burned by Celestial Hammer's Fire trail.</p>
+                        <p>Kill <span>3</span> / <span>5</span> / <span>7</span> enemy heroes that are being burned by Celestial Hammer's Fire trail</p>
                     </div>
                 </div>
             </div>
@@ -4164,6 +4183,9 @@
                 <div class="panel-content">
                     <hr>
                     <p>Works Correctly: <span class="bad">No</span></p>
+                    <ul>
+                        <li>Doesn't work</li>
+                    </ul>
                     <p>Icon: <span class="good">Good</span></p>
                     <p>Description: <span class="mid">Changed</span></p>
                     <ul>
@@ -4179,7 +4201,7 @@
                         <img src="img/icons_dota_plus_challenges_heroes/dawnbreaker_fire_wreath_png.png">
                     </div>
                     <div class="challenges-text">
-                        <p>Kill <span>40</span> / <span>60</span> / <span>80</span> creeps with Starbreaker.</p>
+                        <p>Kill <span>40</span> / <span>60</span> / <span>80</span> creeps with Starbreaker</p>
                     </div>
                 </div>
             </div>
@@ -4244,43 +4266,6 @@
                     <p>Works Correctly: <span class="good">Yes</span></p>
                     <p>Icon: <span class="good">Good</span></p>
                     <p>Description: <span class="good">Good</span></p>
-                </div>
-            </div>
-
-            <!-- Nothl Projection Heals -->
-            <div class="panel-main-mid">
-                <div class="panel-content">
-                    <div class ="challenges-icon">
-                        <img src="img/icons_dota_plus_challenges_heroes/dazzle_nothl_projection_png.png">
-                    </div>
-                    <div class="challenges-text">
-                        <p>Provide <span>2000</span> / <span>4000</span> / <span>6000</span> Healing to heroes during <span>Nothl Projection</span>.</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="panel">
-                <div class="panel-content">
-                    <div class ="challenges-icon">
-                        <img src="img/icons_dota_plus_challenges_heroes/dazzle_nothl_projection_png.png">
-                    </div>
-                    <div class="challenges-text">
-                        <p>Heal <span>2000</span> / <span>4000</span> / <span>6000</span> health to allied Heroes while you are affected by <span>Nothl Projection</span>.</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="panel expandable-panel">
-                <div class="panel-header">"DOTA_ChallengeDesc_Dazzle_HealDuringNothlProjection"</div>
-                <button class="expand-button">More</button>
-                <div class="panel-content">
-                    <hr>
-                    <p>Works Correctly: <span class="good">Yes</span></p>
-                    <p>Icon: <span class="good">Good</span></p>
-                    <p>Description: <span class="mid">Changed</span></p>
-                    <ul>
-                        <li>Changed to the new standard</li>
-                    </ul>
                 </div>
             </div>
 
@@ -4471,7 +4456,7 @@
             </div>
             
             <div class="panel expandable-panel">
-                <div class="panel-header">"DOTA_ChallengeDesc_Doom_Damage_During_Scorched_Earth"</div>
+                <div class="panel-header">"DOTA_ChallengeDesc_Doom_Doom_Duration"</div>
                 <button class="expand-button">More</button>
                 <div class="panel-content">
                     <hr>
@@ -4612,7 +4597,7 @@
                         <img src="img/icons_dota_plus_challenges_heroes/drow_ranger_marksmanship_png.png">
                     </div>
                     <div class="challenges-text">
-                        <p>Deal <span>2500</span> / <span>5000</span> / <span>7500</span> damage to enemy Heroes with <span>Marksmanship</span>.</p>
+                        <p>Deal <span>2500</span> / <span>5000</span> / <span>7500</span> damage to enemy Heroes with Marksmanship.</p>
                     </div>
                 </div>
             </div>
@@ -4635,7 +4620,7 @@
                     <hr>
                     <p>Works Correctly: <span class="bad">No</span></p>
                     <ul>
-                        <li>Doesn't track any damage</li>
+                        <li>Doesn't work</li>
                     </ul>
                     <p>Icon: <span class="good">Good</span></p>
                     <p>Description: <span class="good">Good</span></p>
@@ -4643,13 +4628,13 @@
             </div>
 
             <!-- Multishot Damage -->
-            <div class="panel-main">
+            <div class="panel-main-mid">
                 <div class="panel-content">
                     <div class ="challenges-icon">
                         <img src="img/icons_dota_plus_challenges_heroes/drow_ranger_multishot_png.png">
                     </div>
                     <div class="challenges-text">
-                        <p>Deal <span>3000</span> / <span>7000</span> / <span>10000</span> damage to enemy Heroes with <span>Multishot</span>.</p>
+                        <p>Deal <span>3000</span> / <span>7000</span> / <span>10000</span> damage to enemy Heroes with Multishot.</p>
                     </div>
                 </div>
             </div>
@@ -4705,6 +4690,10 @@
                     <hr>
                     <p>Works Correctly: <span class="good">Yes</span></p>
                     <p>Icon: <span class="good">Good</span></p>
+                    <p>Function: <span class="mid">Changed</span></p>
+                    <ul>
+                        <li>Changed to fit the new description standard</li>
+                    </ul>
                     <p>Description: <span class="mid">Changed</span></p>
                     <ul>
                         <li>Changed to the new standard</li>
@@ -4864,6 +4853,10 @@
                     <hr>
                     <p>Works Correctly: <span class="good">Yes</span></p>
                     <p>Icon: <span class="good">Good</span></p>
+                    <p>Function: <span class="mid">Changed</span></p>
+                    <ul>
+                        <li>Changed to fit the new description standard</li>
+                    </ul>
                     <p>Description: <span class="mid">Changed</span></p>
                     <ul>
                         <li>Changed to the new standard</li>
@@ -5153,7 +5146,7 @@
                         <img src="img/icons_dota_plus_challenges_heroes/faceless_void_time_walk_png.png">
                     </div>
                     <div class="challenges-text">
-                        <p>Backtrack <span>3000</span> / <span>6000</span> / <span>9000</span> damage with <span>Time Walk</span>.</p>
+                        <p>Backtrack <span>3000</span> / <span>6000</span> / <span>9000</span> damage with <span>Time Walk.</span></p>
                     </div>
                 </div>
             </div>
@@ -5243,7 +5236,7 @@
                         <img src="img/icons_dota_plus_challenges_heroes/grimstroke_ink_creature_png.png">
                     </div>
                     <div class="challenges-text">
-                        <p>Deal <span>4000</span> / <span>8000</span> / <span>12000</span> damage to enemy Heroes that are affected by <span>Phantom's Embrace</span>.</p>
+                        <p>Deal <span>4000</span> / <span>8000</span> / <span>12000</span> damage to enemy Heroes with <span>Phantom's Embrace</span>.</p>
                     </div>
                 </div>
             </div>
@@ -5292,6 +5285,10 @@
                     <hr>
                     <p>Works Correctly: <span class="good">Yes</span></p>
                     <p>Icon: <span class="good">Good</span></p>
+                    <p>Function: <span class="mid">Changed</span></p>
+                    <ul>
+                        <li>Changed to fit the new description standard</li>
+                    </ul>
                     <p>Description: <span class="mid">Changed</span></p>
                     <ul>
                         <li>Changed to the new standard</li>
@@ -5323,7 +5320,7 @@
                         <img src="img/icons_dota_plus_challenges_heroes/gyrocopter_flak_cannon_png.png">
                     </div>
                     <div class="challenges-text">
-                        <p>Kill <span>3</span> / <span>6</span> / <span>9</span> enemy Heroes while you are affected by <span>Flak Cannon</span>.</p>
+                        <p>Get <span>3</span> / <span>6</span> / <span>9</span> kills or assists on enemy Heroes while you are affected by <span>Flak Cannon</span>.</p>
                     </div>
                 </div>
             </div>
@@ -5335,6 +5332,10 @@
                     <hr>
                     <p>Works Correctly: <span class="good">Yes</span></p>
                     <p>Icon: <span class="good">Good</span></p>
+                    <p>Function: <span class="mid">Changed</span></p>
+                    <ul>
+                        <li>Changed to fit the new description standard</li>
+                    </ul>
                     <p>Description: <span class="mid">Changed</span></p>
                     <ul>
                         <li>Changed to the new standard</li>
@@ -5385,7 +5386,7 @@
             </div>
 
             <!-- Sharpshooter Kills -->
-            <div class="panel-main-mid">
+            <div class="panel-main">
                 <div class="panel-content">
                     <div class ="challenges-icon">
                         <img src="img/icons_dota_plus_challenges_heroes/hoodwink_sharpshooter_png.png">
@@ -5465,13 +5466,13 @@
             <h1></h1>
 
             <!-- E.M.P. Mana Burn -->
-            <div class="panel-main">
+            <div class="panel-main-mid">
                 <div class="panel-content">
                     <div class ="challenges-icon">
                         <img src="img/icons_dota_plus_challenges_heroes/invoker_emp_png.png">
                     </div>
                     <div class="challenges-text">
-                        <p>Burn <span>2000</span> / <span>4000</span> / <span>6000</span> mana from enemy Heroes with <span>E.M.P.</span></p>
+                        <p>Burn <span>2000</span> / <span>4000</span> / <span>6000</span> mana from enemy Heroes with <span>EMP.</span></p>
                     </div>
                 </div>
             </div>
@@ -5489,11 +5490,15 @@
             
             <div class="panel expandable-panel">
                 <div class="panel-header">"DOTA_ChallengeDesc_InvokerEMPManaDamage"</div>
+                <button class="expand-button">More</button>
                 <div class="panel-content">
                     <hr>
                     <p>Works Correctly: <span class="good">Yes</span></p>
                     <p>Icon: <span class="good">Good</span></p>
-                    <p>Description: <span class="good">Good</span></p>
+                    <p>Description: <span class="mid">Changed</span></p>
+                    <ul>
+                        <li>Changed to the new standard</li>
+                    </ul>
                 </div>
             </div>
 
@@ -5574,7 +5579,7 @@
                         <img src="img/icons_dota_plus_challenges_heroes/invoker_emp_png.png">
                     </div>
                     <div class="challenges-text">
-                        <p>Restore <span>1000</span> / <span>2000</span> / <span>3000</span> mana by stealing mana from enemy Heroes with <span>E.M.P.</span></p>
+                        <p>Restore <span>1000</span> / <span>2000</span> / <span>3000</span> mana by stealing mana from enemy Heroes with <span>EMP.</span></p>
                     </div>
                 </div>
             </div>
@@ -5597,6 +5602,10 @@
                     <hr>
                     <p>Works Correctly: <span class="good">Yes</span></p>
                     <p>Icon: <span class="good">Good</span></p>
+                    <p>Function: <span class="mid">Changed</span></p>
+                    <ul>
+                        <li>Changed to fit the new description standard</li>
+                    </ul>
                     <p>Description: <span class="mid">Changed</span></p>
                     <ul>
                         <li>Changed to the new standard</li>
@@ -5604,7 +5613,7 @@
                 </div>
             </div>
 
-            <!-- IO -->
+            <!-- IO-->
             <h1>Io</h1>
             <h1></h1>
             <h1></h1>
@@ -5723,7 +5732,7 @@
                         <img src="img/icons_dota_plus_challenges_heroes/wisp_tether_png.png">
                     </div>
                     <div class="challenges-text">
-                        <p>Slow enemy heroes <span>10</span> / <span>15</span> / <span>20</span> times with <span>Tether</span>.</p>
+                        <p>Slow enemy heroes <span>10</span> / <span>15</span> / <span>20</span> times with Tether.</p>
                     </div>
                 </div>
             </div>
@@ -5937,6 +5946,10 @@
                     <hr>
                     <p>Works Correctly: <span class="good">Yes</span></p>
                     <p>Icon: <span class="good">Good</span></p>
+                    <p>Function: <span class="mid">Changed</span></p>
+                    <ul>
+                        <li>Changed to fit the new description standard</li>
+                    </ul>
                     <p>Description: <span class="mid">Changed</span></p>
                     <ul>
                         <li>Changed to the new standard</li>
@@ -6058,6 +6071,10 @@
                     <hr>
                     <p>Works Correctly: <span class="good">Yes</span></p>
                     <p>Icon: <span class="good">Good</span></p>
+                    <p>Function: <span class="mid">Changed</span></p>
+                    <ul>
+                        <li>Changed to fit the new description standard</li>
+                    </ul>
                     <p>Description: <span class="mid">Changed</span></p>
                     <ul>
                         <li>Changed to the new standard</li>
@@ -6095,6 +6112,10 @@
                     <hr>
                     <p>Works Correctly: <span class="good">Yes</span></p>
                     <p>Icon: <span class="good">Good</span></p>
+                    <p>Function: <span class="mid">Changed</span></p>
+                    <ul>
+                        <li>Changed to fit the new description standard</li>
+                    </ul>
                     <p>Description: <span class="mid">Changed</span></p>
                     <ul>
                         <li>Changed to the new standard</li>
@@ -6253,6 +6274,10 @@
                     <hr>
                     <p>Works Correctly: <span class="good">Yes</span></p>
                     <p>Icon: <span class="good">Good</span></p>
+                    <p>Function: <span class="mid">Changed</span></p>
+                    <ul>
+                        <li>Changed to fit the new description standard</li>
+                    </ul>
                     <p>Description: <span class="mid">Changed</span></p>
                     <ul>
                         <li>Changed to the new standard</li>
@@ -6278,7 +6303,7 @@
                         <img src="img/icons_dota_plus_challenges_heroes/legion_commander_press_the_attack_png.png">
                     </div>
                     <div class="challenges-text">
-                        <p>Dispel allied Heroes with <span>Press the Attack</span> <span>2</span> / <span>4</span> / <span>6</span>.</p>
+                        <p>Dispel allied Heroes with <span>Press the Attack</span> <span>2</span> / <span>4</span> / <span>6</span> times.</p>
                     </div>
                 </div>
             </div>
@@ -6372,7 +6397,7 @@
             </div>
             
             <div class="panel expandable-panel">
-                <div class="panel-header">"DOTA_ChallengeDesc_LichChainFrostBounce"</div>
+                <div class="panel-header">"DOTA_ChallengeDesc_Lich_Total_ChainFrost_Bounces"</div>
                 <button class="expand-button">More</button>
                 <div class="panel-content">
                     <hr>
@@ -6415,6 +6440,10 @@
                     <hr>
                     <p>Works Correctly: <span class="good">Yes</span></p>
                     <p>Icon: <span class="good">Good</span></p>
+                    <p>Function: <span class="mid">Changed</span></p>
+                    <ul>
+                        <li>Changed to fit the new description standard</li>
+                    </ul>
                     <p>Description: <span class="mid">Changed</span></p>
                     <ul>
                         <li>Changed to the new standard</li>
@@ -6573,6 +6602,10 @@
                     <hr>
                     <p>Works Correctly: <span class="good">Yes</span></p>
                     <p>Icon: <span class="good">Good</span></p>
+                    <p>Function: <span class="mid">Changed</span></p>
+                    <ul>
+                        <li>Changed to fit the new description standard</li>
+                    </ul>
                     <p>Description: <span class="mid">Changed</span></p>
                     <ul>
                         <li>Changed to the new standard</li>
@@ -6601,7 +6634,7 @@
                         <img src="img/icons_dota_plus_challenges_heroes/lone_druid_spirit_bear_png.png">
                     </div>
                     <div class="challenges-text">
-                        <p>Deal <span>3000</span> / <span>5000</span> / <span>7000</span> damage to enemy Buildings with <span>Summon Spirit Bear</span>.</p>
+                        <p>Deal <span>3000</span> / <span>5000</span> / <span>7000</span> damage to enemy Buildings with <span>Spirit Bear</span>.</p>
                     </div>
                 </div>
             </div>
@@ -6612,7 +6645,7 @@
                         <img src="img/icons_dota_plus_challenges_heroes/lone_druid_spirit_bear_png.png">
                     </div>
                     <div class="challenges-text">
-                        <p>Deal <span>3000</span> / <span>5000</span> / <span>7000</span> damage to enemy Buildings with <span>Summon Spirit Bear</span>.</p>
+                        <p>Deal <span>3000</span> / <span>5000</span> / <span>7000</span> damage to enemy buildings with <span>Summon Spirit Bear</span>.</p>
                     </div>
                 </div>
             </div>
@@ -6623,6 +6656,9 @@
                 <div class="panel-content">
                     <hr>
                     <p>Works Correctly: <span class="bad">No</span></p>
+                    <ul>
+                        <li>Doesn't work. This challenge is placed in the wrong folder and can be found in scripts>tournaments>challenge_temaplates>heroes>furion</li>
+                    </ul>
                     <p>Icon: <span class="good">Good</span></p>
                     <p>Description: <span class="mid">Changed</span></p>
                     <ul>
@@ -6675,7 +6711,7 @@
                         <img src="img/icons_dota_plus_challenges_heroes/lone_druid_spirit_link_png.png">
                     </div>
                     <div class="challenges-text">
-                        <p>Heal <span>2500</span> / <span>5000</span> / <span>7500</span> HP from <span>Spirit Link</span>.</p>
+                        <p>Heal <span>2500</span> / <span>5000</span> / <span>7500</span> HP from Spirit Link.</p>
                     </div>
                 </div>
             </div>
@@ -6970,7 +7006,10 @@
                 <button class="expand-button">More</button>
                 <div class="panel-content">
                     <hr>
-                    <p>Works Correctly: <span class="good">Yes</span></p>
+                    <p>Works Correctly: <span class="bad">No</span></p>
+                    <ul>
+                        <li>Doesn't count self</li>
+                    </ul>
                     <p>Icon: <span class="good">Good</span></p>
                     <p>Description: <span class="mid">Changed</span></p>
                     <ul>
@@ -7014,6 +7053,10 @@
                     <hr>
                     <p>Works Correctly: <span class="good">Yes</span></p>
                     <p>Icon: <span class="good">Good</span></p>
+                    <p>Function: <span class="mid">Changed</span></p>
+                    <ul>
+                        <li>Changed to fit the new description standard</li>
+                    </ul>
                     <p>Description: <span class="mid">Changed</span></p>
                     <ul>
                         <li>Changed to the new standard</li>
@@ -7051,6 +7094,10 @@
                     <hr>
                     <p>Works Correctly: <span class="good">Yes</span></p>
                     <p>Icon: <span class="good">Good</span></p>
+                    <p>Function: <span class="mid">Changed</span></p>
+                    <ul>
+                        <li>Changed to fit the new description standard</li>
+                    </ul>
                     <p>Description: <span class="mid">Changed</span></p>
                     <ul>
                         <li>Changed to the new standard</li>
@@ -7065,7 +7112,7 @@
                         <img src="img/icons_dota_plus_challenges_heroes/marci_grapple_png.png">
                     </div>
                     <div class="challenges-text">
-                        <p>Stun <span>10</span> / <span>20</span> / <span>30</span> enemy heroes with <span>Dispose</span>.</p>
+                        <p>Stun <span>10</span> / <span>20</span> / <span>30</span> enemy heroes with Dispose.</p>
                     </div>
                 </div>
             </div>
@@ -7088,6 +7135,10 @@
                     <hr>
                     <p>Works Correctly: <span class="good">Yes</span></p>
                     <p>Icon: <span class="good">Good</span></p>
+                    <p>Function: <span class="mid">Changed</span></p>
+                    <ul>
+                        <li>Changed to fit the new description standard</li>
+                    </ul>
                     <p>Description: <span class="mid">Changed</span></p>
                     <ul>
                         <li>Changed to the new standard</li>
@@ -7118,7 +7169,7 @@
                         <img src="img/icons_dota_plus_challenges_heroes/mars_bulwark_png.png">
                     </div>
                     <div class="challenges-text">
-                        <p>Prevent <span>5000</span> / <span>10000</span> / <span>15000</span> damage from enemy Heroes with <span>Bulwark</span>.</p>
+                        <p>Prevent <span>5000</span> / <span>10000</span> / <span>15000</span> damage with <span>Bulwark</span>.</p>
                     </div>
                 </div>
             </div>
@@ -7167,6 +7218,10 @@
                     <hr>
                     <p>Works Correctly: <span class="good">Yes</span></p>
                     <p>Icon: <span class="good">Good</span></p>
+                    <p>Function: <span class="mid">Changed</span></p>
+                    <ul>
+                        <li>Changed to fit the new description standard</li>
+                    </ul>
                     <p>Description: <span class="mid">Changed</span></p>
                     <ul>
                         <li>Changed to the new standard</li>
@@ -7344,7 +7399,7 @@
                         <img src="img/icons_dota_plus_challenges_heroes/mirana_arrow_png.png">
                     </div>
                     <div class="challenges-text">
-                        <p>Land <span>3</span> / <span>5</span> / <span>7</span> <span>Sacred Arrow</span> with duration greater than or equal to <span>5.0</span> seconds as <span>Mirana</span>.</p>
+                        <p>Land <span>3</span> / <span>5</span> / <span>7</span> <span>Arrows</span> with duration greater than or equal to <span>5.0</span> seconds as <span>Mirana</span>.</p>
                     </div>
                 </div>
             </div>
@@ -7367,6 +7422,10 @@
                     <hr>
                     <p>Works Correctly: <span class="good">Yes</span></p>
                     <p>Icon: <span class="good">Good</span></p>
+                    <p>Function: <span class="mid">Changed</span></p>
+                    <ul>
+                        <li>Changed to fit the new description standard</li>
+                    </ul>
                     <p>Description: <span class="mid">Changed</span></p>
                     <ul>
                         <li>Changed to the new standard</li>
@@ -7475,6 +7534,10 @@
                     <hr>
                     <p>Works Correctly: <span class="good">Yes</span></p>
                     <p>Icon: <span class="good">Good</span></p>
+                    <p>Function: <span class="mid">Changed</span></p>
+                    <ul>
+                        <li>Changed to fit the new description standard</li>
+                    </ul>
                     <p>Description: <span class="mid">Changed</span></p>
                     <ul>
                         <li>Changed to the new standard</li>
@@ -7559,6 +7622,10 @@
                     <hr>
                     <p>Works Correctly: <span class="good">Yes</span></p>
                     <p>Icon: <span class="good">Good</span></p>
+                    <p>Function: <span class="mid">Changed</span></p>
+                    <ul>
+                        <li>Changed to fit the new description standard</li>
+                    </ul>
                     <p>Description: <span class="mid">Changed</span></p>
                     <ul>
                         <li>Changed to the new standard</li>
@@ -7927,7 +7994,10 @@
                 <button class="expand-button">More</button>
                 <div class="panel-content">
                     <hr>
-                    <p>Works Correctly: <span class="good">Yes</span></p>
+                    <p>Works Correctly: <span class="bad">No</span></p>
+                    <ul>
+                        <li>UNCONFIRMED; doesn't work when 'Fat Chance' Facet is chosen</li>
+                    </ul>
                     <p>Icon: <span class="good">Good</span></p>
                     <p>Description: <span class="mid">Changed</span></p>
                     <ul>
@@ -8215,7 +8285,7 @@
                         <img src="img/icons_dota_plus_challenges_heroes/phantom_assassin_blur_png.png">
                     </div>
                     <div class="challenges-text">
-                        <p>Evade <span>5000</span> / <span>7500</span> / <span>10000</span> Physical damage from enemy Heroes using <span>Blur</span>.</p>
+                        <p>Evade <span>5000</span> / <span>7500</span> / <span>10000</span> physical damage from enemy Heroes using <span>Blur</span>.</p>
                     </div>
                 </div>
             </div>
@@ -8278,6 +8348,10 @@
                     <hr>
                     <p>Works Correctly: <span class="good">Yes</span></p>
                     <p>Icon: <span class="good">Good</span></p>
+                    <p>Function: <span class="mid">Changed</span></p>
+                    <ul>
+                        <li>Changed to fit the new description standard</li>
+                    </ul>
                     <p>Description: <span class="mid">Changed</span></p>
                     <ul>
                         <li>Changed to the new standard</li>
@@ -8674,6 +8748,9 @@
                 <div class="panel-content">
                     <hr>
                     <p>Works Correctly: <span class="bad">No</span></p>
+                    <ul>
+                        <li>UNCONFIRMED; doesn't work when 'Siphoning' Facet is chosen</li>
+                    </ul>
                     <p>Icon: <span class="good">Good</span></p>
                     <p>Description: <span class="mid">Changed</span></p>
                     <ul>
@@ -9075,6 +9152,10 @@
                     <hr>
                     <p>Works Correctly: <span class="good">Yes</span></p>
                     <p>Icon: <span class="good">Good</span></p>
+                    <p>Function: <span class="mid">Changed</span></p>
+                    <ul>
+                        <li>Changed to fit the new description standard</li>
+                    </ul>
                     <p>Description: <span class="mid">Changed</span></p>
                     <ul>
                         <li>Changed to the new standard</li>
@@ -9566,6 +9647,10 @@
                     <hr>
                     <p>Works Correctly: <span class="good">Yes</span></p>
                     <p>Icon: <span class="good">Good</span></p>
+                    <p>Function: <span class="mid">Changed</span></p>
+                    <ul>
+                        <li>Changed to fit the new description standard</li>
+                    </ul>
                     <p>Description: <span class="mid">Changed</span></p>
                     <ul>
                         <li>Changed to the new standard</li>
@@ -9603,6 +9688,10 @@
                     <hr>
                     <p>Works Correctly: <span class="good">Yes</span></p>
                     <p>Icon: <span class="good">Good</span></p>
+                    <p>Function: <span class="mid">Changed</span></p>
+                    <ul>
+                        <li>Changed to fit the new description standard</li>
+                    </ul>
                     <p>Description: <span class="mid">Changed</span></p>
                     <ul>
                         <li>Changed to the new standard</li>
@@ -9639,7 +9728,7 @@
             </div>
             
             <div class="panel expandable-panel">
-                <div class="panel-header">"DOTA_ChallengeDesc_DamageFromInvis"</div>
+                <div class="panel-header">"DOTA_ChallengeDesc_Snapfire_DamageOnShotgunSlowed"</div>
                 <button class="expand-button">More</button>
                 <div class="panel-content">
                     <hr>
@@ -9719,6 +9808,10 @@
                     <hr>
                     <p>Works Correctly: <span class="good">Yes</span></p>
                     <p>Icon: <span class="good">Good</span></p>
+                    <p>Function: <span class="mid">Changed</span></p>
+                    <ul>
+                        <li>Changed to fit the new description standard</li>
+                    </ul>
                     <p>Description: <span class="mid">Changed</span></p>
                     <ul>
                         <li>Changed to the new standard</li>
@@ -9733,7 +9826,7 @@
                         <img src="img/icons_dota_plus_challenges_heroes/snapfire_firesnap_cookie_png.png">
                     </div>
                     <div class="challenges-text">
-                        <p>Stun enemy Heroes with <span>Firesnap Cookie</span> given to allies a total of <span>4</span> / <span>8</span> / <span>12</span> times.</p>
+                        <p>Stun enemy Heroes with <span>Firesnaps</span> given to allies a total of <span>4</span> / <span>8</span> / <span>12</span> times.</p>
                     </div>
                 </div>
             </div>
@@ -9756,6 +9849,10 @@
                     <hr>
                     <p>Works Correctly: <span class="good">Yes</span></p>
                     <p>Icon: <span class="good">Good</span></p>
+                    <p>Function: <span class="mid">Changed</span></p>
+                    <ul>
+                        <li>Changed to fit the new description standard</li>
+                    </ul>
                     <p>Description: <span class="mid">Changed</span></p>
                     <ul>
                         <li>Changed to the new standard</li>
@@ -9835,6 +9932,10 @@
                     <hr>
                     <p>Works Correctly: <span class="good">Yes</span></p>
                     <p>Icon: <span class="good">Good</span></p>
+                    <p>Function: <span class="mid">Changed</span></p>
+                    <ul>
+                        <li>Changed to fit the new description standard</li>
+                    </ul>
                     <p>Description: <span class="mid">Changed</span></p>
                     <ul>
                         <li>Changed to the new standard</li>
@@ -9872,6 +9973,10 @@
                     <hr>
                     <p>Works Correctly: <span class="good">Yes</span></p>
                     <p>Icon: <span class="good">Good</span></p>
+                    <p>Function: <span class="mid">Changed</span></p>
+                    <ul>
+                        <li>Changed to fit the new description standard</li>
+                    </ul>
                     <p>Description: <span class="mid">Changed</span></p>
                     <ul>
                         <li>Changed to the new standard</li>
@@ -9951,6 +10056,10 @@
                     <hr>
                     <p>Works Correctly: <span class="good">Yes</span></p>
                     <p>Icon: <span class="good">Good</span></p>
+                    <p>Function: <span class="mid">Changed</span></p>
+                    <ul>
+                        <li>Changed to fit the new description standard</li>
+                    </ul>
                     <p>Description: <span class="mid">Changed</span></p>
                     <ul>
                         <li>Changed to the new standard</li>
@@ -10220,6 +10329,9 @@
                 <div class="panel-content">
                     <hr>
                     <p>Works Correctly: <span class="bad">No</span></p>
+                    <ul>
+                        <li>Kills doesn't count</li>
+                    </ul>
                     <p>Icon: <span class="good">Good</span></p>
                     <p>Description: <span class="mid">Changed</span></p>
                     <ul>
@@ -10235,7 +10347,7 @@
                         <img src="img/icons_dota_plus_challenges_heroes/sven_warcry_png.png">
                     </div>
                     <div class="challenges-text">
-                        <p>Prevent <span>3000</span> / <span>5000</span> / <span>7000</span> Physical damage on yourself and friendly Heroes by using <span>Warcry</span>.</p>
+                        <p>Prevent <span>3000</span> / <span>5000</span> / <span>7000</span> physical damage on yourself and friendly Heroes by using <span>Warcry</span>.</p>
                     </div>
                 </div>
             </div>
@@ -10257,6 +10369,9 @@
                 <div class="panel-content">
                     <hr>
                     <p>Works Correctly: <span class="bad">No</span></p>
+                    <ul>
+                        <li>Seems to count any damage block on the map</li>
+                    </ul>
                     <p>Icon: <span class="good">Good</span></p>
                     <p>Description: <span class="mid">Changed</span></p>
                     <ul>
@@ -10487,6 +10602,10 @@
                     <hr>
                     <p>Works Correctly: <span class="good">Yes</span></p>
                     <p>Icon: <span class="good">Good</span></p>
+                    <p>Function: <span class="mid">Changed</span></p>
+                    <ul>
+                        <li>Changed to fit the new description standard</li>
+                    </ul>
                     <p>Description: <span class="mid">Changed</span></p>
                     <ul>
                         <li>Changed to the new standard</li>
@@ -10512,7 +10631,7 @@
                         <img src="img/icons_dota_plus_challenges_heroes/terrorblade_reflection_png.png">
                     </div>
                     <div class="challenges-text">
-                        <p>Get <span>6</span> / <span>12</span> / <span>18</span> kills or assist on enemy Heroes that are affected by <span>Reflection</span>.</p>
+                        <p>Get <span>6</span> / <span>12</span> / <span>18</span> kills or assists on enemy Heroes that are affected by <span>Reflection</span>.</p>
                     </div>
                 </div>
             </div>
@@ -10524,6 +10643,10 @@
                     <hr>
                     <p>Works Correctly: <span class="good">Yes</span></p>
                     <p>Icon: <span class="good">Good</span></p>
+                    <p>Function: <span class="mid">Changed</span></p>
+                    <ul>
+                        <li>Changed to fit the new description standard</li>
+                    </ul>
                     <p>Description: <span class="mid">Changed</span></p>
                     <ul>
                         <li>Changed to the new standard</li>
@@ -10566,6 +10689,10 @@
                     <hr>
                     <p>Works Correctly: <span class="good">Yes</span></p>
                     <p>Icon: <span class="good">Good</span></p>
+                    <p>Function: <span class="mid">Changed</span></p>
+                    <ul>
+                        <li>Changed to fit the new description standard</li>
+                    </ul>
                     <p>Description: <span class="mid">Changed</span></p>
                     <ul>
                         <li>Changed to the new standard</li>
@@ -10683,6 +10810,10 @@
                     <hr>
                     <p>Works Correctly: <span class="good">Yes</span></p>
                     <p>Icon: <span class="good">Good</span></p>
+                    <p>Function: <span class="mid">Changed</span></p>
+                    <ul>
+                        <li>Changed to fit the new description standard</li>
+                    </ul>
                     <p>Description: <span class="mid">Changed</span></p>
                     <ul>
                         <li>Changed to the new standard</li>
@@ -10818,13 +10949,13 @@
             </div>
 
             <!-- Nature's Grasp Damage -->
-            <div class="panel-main">
+            <div class="panel-main-mid">
                 <div class="panel-content">
                     <div class ="challenges-icon">
                         <img src="img/icons_dota_plus_challenges_heroes/treant_natures_grasp_png.png">
                     </div>
                     <div class="challenges-text">
-                        <p>Deal <span>3000</span> / <span>6000</span> / <span>9000</span> damage to enemy Heroes with <span>Nature's Grasp</span>.</p>
+                        <p>Deal <span>3000</span> / <span>6000</span> / <span>9000</span> damage to enemy Heroes with Nature's Grasp.</p>
                     </div>
                 </div>
             </div>
@@ -10907,13 +11038,13 @@
             <h1></h1>
 
             <!-- Atrophy Aura Stacks -->
-            <div class="panel-main">
+            <div class="panel-main-mid">
                 <div class="panel-content">
                     <div class ="challenges-icon">
                         <img src="img/icons_dota_plus_challenges_heroes/abyssal_underlord_atrophy_aura_png.png">
                     </div>
                     <div class="challenges-text">
-                        <p>Accumulate <span>150</span> / <span>225</span> / <span>300</span> damage with <span>Atrophy Aura</span>.</p>
+                        <p>Accumulate <span>150</span> / <span>225</span> / <span>300</span> bonus damage with <span>Atrophy Aura</span>.</p>
                     </div>
                 </div>
             </div>
@@ -11030,7 +11161,7 @@
                         <img src="img/icons_dota_plus_challenges_heroes/ursa_enrage_png.png">
                     </div>
                     <div class="challenges-text">
-                        <p>Deal <span>4000</span> / <span>8000</span> / <span>12000</span> damage to enemy Heroes while you are <span>Enrage</span>.</p>
+                        <p>Deal <span>4000</span> / <span>8000</span> / <span>12000</span> damage to enemy Heroes while you are <span>Enraged</span>.</p>
                     </div>
                 </div>
             </div>
@@ -11090,6 +11221,10 @@
                     <hr>
                     <p>Works Correctly: <span class="good">Yes</span></p>
                     <p>Icon: <span class="good">Good</span></p>
+                    <p>Function: <span class="mid">Changed</span></p>
+                    <ul>
+                        <li>Changed to fit the new description standard</li>
+                    </ul>
                     <p>Description: <span class="mid">Changed</span></p>
                     <ul>
                         <li>Changed to the new standard</li>
@@ -11127,6 +11262,10 @@
                     <hr>
                     <p>Works Correctly: <span class="good">Yes</span></p>
                     <p>Icon: <span class="good">Good</span></p>
+                    <p>Function: <span class="mid">Changed</span></p>
+                    <ul>
+                        <li>Changed to fit the new description standard</li>
+                    </ul>
                     <p>Description: <span class="mid">Changed</span></p>
                     <ul>
                         <li>Changed to the new standard</li>
@@ -11416,7 +11555,7 @@
                         <img src="img/icons_dota_plus_challenges_heroes/visage_summon_familiars_stone_form_png.png">
                     </div>
                     <div class="challenges-text">
-                        <p>Stun enemy Heroes <span>10</span> / <span>20</span> / <span>30</span> times with <span>Summon Familiars</span>.</p>
+                        <p>Stun enemy Heroes <span>10</span> / <span>20</span> / <span>30</span> times with <span>Familiars</span>.</p>
                     </div>
                 </div>
             </div>
@@ -11475,7 +11614,7 @@
             </div>
             
             <div class="panel expandable-panel">
-                <div class="panel-header">"#DOTA_ChallengeDesc_Void_Spirit_DamageOnAetherRemnanted"</div>
+                <div class="panel-header">"DOTA_ChallengeDesc_Void_Spirit_DamageOnAetherRemnanted"</div>
                 <button class="expand-button">More</button>
                 <div class="panel-content">
                     <hr>
@@ -11600,8 +11739,6 @@
                 </div>
             </div>
 
-
-
             <!-- Chaotic Offering Summoned -->
             <div class="panel-main-mid">
                 <div class="panel-content">
@@ -11609,7 +11746,7 @@
                         <img src="img/icons_dota_plus_challenges_heroes/warlock_rain_of_chaos_png.png">
                     </div>
                     <div class="challenges-text">
-                        <p>Summon <span>6</span> / <span>10</span> / <span>14</span> Golems with <span>Chaotic Offering</span> .</p>
+                        <p>Summon <span>6</span> / <span>10</span> / <span>14</span> <span>Chaotic Offering</span> golems.</p>
                     </div>
                 </div>
             </div>
@@ -11707,6 +11844,10 @@
                     <hr>
                     <p>Works Correctly: <span class="good">Yes</span></p>
                     <p>Icon: <span class="good">Good</span></p>
+                    <p>Function: <span class="mid">Changed</span></p>
+                    <ul>
+                        <li>Changed to fit the new description standard</li>
+                    </ul>
                     <p>Description: <span class="mid">Changed</span></p>
                     <ul>
                         <li>Changed to the new standard</li>
@@ -11819,6 +11960,10 @@
                     <hr>
                     <p>Works Correctly: <span class="good">Yes</span></p>
                     <p>Icon: <span class="good">Good</span></p>
+                    <p>Function: <span class="mid">Changed</span></p>
+                    <ul>
+                        <li>Changed to fit the new description standard</li>
+                    </ul>
                     <p>Description: <span class="mid">Changed</span></p>
                     <ul>
                         <li>Changed to the new standard</li>
@@ -11861,6 +12006,10 @@
                     <hr>
                     <p>Works Correctly: <span class="good">Yes</span></p>
                     <p>Icon: <span class="good">Good</span></p>
+                    <p>Function: <span class="mid">Changed</span></p>
+                    <ul>
+                        <li>Changed to fit the new description standard</li>
+                    </ul>
                     <p>Description: <span class="mid">Changed</span></p>
                     <ul>
                         <li>Changed to the new standard</li>
@@ -11981,13 +12130,13 @@
             </div>
 
             <!-- Maledict Kills -->
-            <div class="panel-main">
+            <div class="panel-main-mid">
                 <div class="panel-content">
                     <div class ="challenges-icon">
                         <img src="img/icons_dota_plus_challenges_heroes/witch_doctor_maledict_png.png">
                     </div>
                     <div class="challenges-text">
-                        <p>Kill <span>2</span> / <span>4</span> / <span>6</span> enemy Heroes with <span>Maledict</span>.</p>
+                        <p>Kill <span>2</span> / <span>4</span> / <span>6</span> enemy heroes with <span>Maledict</span>.</p>
                     </div>
                 </div>
             </div>
@@ -12009,7 +12158,10 @@
                     <hr>
                     <p>Works Correctly: <span class="good">Yes</span></p>
                     <p>Icon: <span class="good">Good</span></p>
-                    <p>Description: <span class="good">Good</span></p>
+                    <p>Description: <span class="mid">Changed</span></p>
+                    <ul>
+                        <li>Changed to the new standard</li>
+                    </ul>
                 </div>
             </div>
 
@@ -12048,6 +12200,10 @@
                     <hr>
                     <p>Works Correctly: <span class="good">Yes</span></p>
                     <p>Icon: <span class="good">Good</span></p>
+                    <p>Function: <span class="mid">Changed</span></p>
+                    <ul>
+                        <li>Changed to fit the new description standard</li>
+                    </ul>
                     <p>Description: <span class="mid">Changed</span></p>
                     <ul>
                         <li>Changed to the new standard</li>
@@ -12088,11 +12244,14 @@
                 <button class="expand-button">More</button>
                 <div class="panel-content">
                     <hr>
-                    <p>Works Correctly: <span class="good">Yes</span></p>
+                    <p>Works Correctly: <span class="bad">No</span></p>
+                    <ul>
+                        <li>Counts damage dealt to any unit</li>
+                    </ul>
                     <p>Icon: <span class="good">Good</span></p>
                     <p>Description: <span class="mid">Changed</span></p>
                     <ul>
-                        <li>Changed to the new standard</li>
+                        <li>Added missing period</li>
                     </ul>
                 </div>
             </div>
