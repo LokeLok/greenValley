@@ -1,3 +1,2 @@
 # Dota+ Challenges
-Please fix Hero Challenges
-Thanks
+Please fix Hero Challenges, thanks!
